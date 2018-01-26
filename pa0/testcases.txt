@@ -1,0 +1,115 @@
+CS214
+Alex Weinrich and Jean Moscoso
+Test Cases
+----------
+
+1.) 
+input:
+	
+output:
+	Error no input.
+2.)
+input:
+	""
+output:
+	Error no input.
+3.)
+input:
+	"\0"
+output:
+	Error no words found in given string
+4.)
+input:
+	"1234567890"
+output:
+	Error no words found in given string
+5.)
+input:
+	"{}[]:''|"
+output:
+	Error no words found in given string
+6.)
+input:
+	"abc def ghi"
+output:
+	abc
+	def
+	ghi
+7.)
+input:
+	"ghi def abc"
+output:
+	abc
+	def
+	ghi
+8.)
+input:
+	"abcd ABCD abc ABC"
+output:
+	ABC
+	ABCD
+	abc
+	abcd
+9.)
+input:
+	"zxz .,., {abc}"
+output:
+	abc
+	zxz
+10.)
+input:
+	"Hello, my name is Alex. I like long walks, sitting around, and contradictions."
+output:
+	Alex
+	Hello
+	I
+	and
+	around
+	contradictions
+	is
+	like
+	long
+	my
+	name
+	sitting
+	walks
+11.)
+input:
+	"def abc ghi abc def ghi"
+output:
+	abc
+	abc
+	def
+	def
+	ghi
+	ghi
+12.)
+input:
+	"This is a sentence. But I want to know how@ long this$can be before breaking.Now123numbers3949are4985my42903spaces84384Having!  other@@@characters###be$$$ the%delimiter^^^."
+output:
+	But
+	Having
+	I
+	Now
+	This
+	a
+	are
+	be
+	be
+	before
+	breaking
+	characters
+	delimiter
+	how
+	is
+	know
+	long
+	my
+	numbers
+	other
+	sentence
+	spaces
+	the
+	this
+	to
+	want
